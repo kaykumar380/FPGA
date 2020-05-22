@@ -1,0 +1,9 @@
+In this project I created a light-weight UART to recofigure the Program Memory of 
+a 8052 softcore during runtime.
+A terminal program on PC like 'Hterm' can be used to send machine code (bin) to
+the Program memory during runtime over UART(RS-232) protocol. The program memory changes
+while the core is held on reset. Then the core starts with new program.
+
+Benefit:
+For running a new program on the FPGA core, new sythesis is not required-> saves time,
+reduces sythesis tool dependency.

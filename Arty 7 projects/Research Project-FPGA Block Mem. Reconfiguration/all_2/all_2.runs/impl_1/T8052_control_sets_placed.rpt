@@ -1,0 +1,414 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Nov 26 12:42:24 2018
+| Host         : KayKay running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file T8052_control_sets_placed.rpt
+| Design       : T8052
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   345 |
+| Unused register locations in slices containing registers |   148 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      8 |            8 |
+|     10 |            7 |
+|     12 |            3 |
+|     14 |            3 |
+|    16+ |          319 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            5336 |          767 |
+| No           | No                    | Yes                    |             402 |           77 |
+| No           | Yes                   | No                     |             146 |           19 |
+| Yes          | No                    | No                     |            4486 |         1058 |
+| Yes          | No                    | Yes                    |             698 |          150 |
+| Yes          | Yes                   | No                     |             320 |           43 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+--------------------------------------------------------+-----------------------------------+------------------+----------------+
+|           Clock Signal          |                      Enable Signal                     |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++---------------------------------+--------------------------------------------------------+-----------------------------------+------------------+----------------+
+|  s_Rst_n1_BUFG                  |                                                        |                                   |                1 |              2 |
+|  Clk_in_IBUF_BUFG               | trans_ins/ser_out0                                     |                                   |                1 |              2 |
+|  clk_reg_n_0_BUFG               | uart/RXD_O1_out                                        | s_Rst_n1_BUFG                     |                1 |              2 |
+|  clk_BUFG                       | lcd/lcd_rs_i_1_n_1                                     |                                   |                1 |              2 |
+|  clk_BUFG                       | lcd/lcd_en_i_1_n_1                                     |                                   |                1 |              2 |
+|  clk_reg_n_0_BUFG               | core51/p_0_in0                                         | s_Rst_n1_BUFG                     |                1 |              8 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/Next_PSW71                    | s_Rst_n1_BUFG                     |                2 |              8 |
+|  clk_reg_n_0_BUFG               |                                                        | core51/p_0_in[0]                  |                2 |              8 |
+|  clk_reg_n_0_BUFG               | uart/Bit_Phase                                         | s_Rst_n1_BUFG                     |                1 |              8 |
+|  clk_reg_n_0_BUFG               | uart/RX_Bit_Cnt[3]_i_1_n_1                             | s_Rst_n1_BUFG                     |                3 |              8 |
+|  clk_reg_n_0_BUFG               | uart/Baud16T_i                                         | s_Rst_n1_BUFG                     |                1 |              8 |
+|  clk_reg_n_0_BUFG               | uart/TX_Bit_Cnt[3]_i_1_n_1                             | s_Rst_n1_BUFG                     |                3 |              8 |
+|  clk_BUFG                       | lcd/pm_column[0]_i_1_n_1                               | lcd/pm_column[4]_i_1_n_1          |                1 |              8 |
+|  clk_reg_n_0_BUFG               | core51/SCON_reg[7]                                     | s_Rst_n1_BUFG                     |                4 |             10 |
+|  clk_reg_n_0_BUFG               |                                                        | core51/alu/md/Tmp1[14]_i_1_n_1    |                1 |             10 |
+|  clk_reg_n_0_BUFG               | tc01/p_3_out[12]                                       | s_Rst_n1_BUFG                     |                3 |             10 |
+|  clk_reg_n_0_BUFG               | tc01/Cnt1[12]_i_1_n_1                                  | s_Rst_n1_BUFG                     |                2 |             10 |
+|  clk_BUFG                       | lcd/g0_b0_n_1                                          |                                   |                2 |             10 |
+|  clk_BUFG                       | lcd/dm_column[4]_i_1_n_1                               |                                   |                2 |             10 |
+|  clk_BUFG                       | lcd/state[4]_i_1_n_1                                   |                                   |                2 |             10 |
+|  Clk_in_IBUF_BUFG               |                                                        |                                   |                4 |             12 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/E[0]                          | s_Rst_n1_BUFG                     |                3 |             12 |
+|  clk_reg_n_0_BUFG               | core51/TCON_reg[5]_0[0]                                | s_Rst_n1_BUFG                     |                3 |             12 |
+|  clk_reg_n_0_BUFG               | core51/alu/md/Div_Q[7]_i_2_n_1                         | core51/alu/md/Div_Q[7]_i_1_n_1    |                2 |             14 |
+|  clk_reg_n_0_BUFG               | core51/alu/md/Tmp1[7]_i_1_n_1                          | core51/alu/md/Tmp1[14]_i_1_n_1    |                2 |             14 |
+|  clk_reg_n_0_BUFG               | uart/TX_ShiftReg[6]_i_1_n_1                            | s_Rst_n1_BUFG                     |                2 |             14 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[10]_244                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[106]_148                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[119]_135                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[129]_125                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[134]_120                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[131]_123                |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[124]_130                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[133]_121                |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[100]_154                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[116]_138                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[0]_254                  |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[122]_132                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[12]_242                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[132]_122                |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[103]_151                |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[112]_142                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[135]_119                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[101]_153                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[117]_137                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[113]_141                |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[123]_131                |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[109]_145                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[126]_128                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[108]_146                |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[125]_129                |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[110]_144                |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[137]_117                |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[138]_116                |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[144]_110                |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[156]_98                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[157]_97                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[13]_241                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[160]_94                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[142]_112                |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[145]_109                |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[147]_107                |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[148]_106                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[136]_118                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[150]_104                |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[158]_96                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[165]_89                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[169]_85                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[170]_84                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[146]_108                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[152]_102                |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[153]_101                |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[139]_115                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[159]_95                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[161]_93                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[172]_82                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[173]_81                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[174]_80                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[175]_79                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[151]_103                |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[154]_100                |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[163]_91                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[140]_114                |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[166]_88                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[168]_86                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[16]_238                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[171]_83                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[141]_113                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[15]_239                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[167]_87                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[176]_78                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[149]_105                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[155]_99                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[162]_92                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[177]_77                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[164]_90                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[143]_111                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[14]_240                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[195]_59                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[180]_74                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[182]_72                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[188]_66                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[18]_236                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[196]_58                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[205]_49                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[192]_62                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[199]_55                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[191]_63                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[184]_70                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[194]_60                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[189]_65                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[181]_73                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[201]_53                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[214]_40                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[21]_233                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[200]_54                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[197]_57                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[209]_45                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[212]_42                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[17]_237                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[183]_71                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[1]_253                  |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[178]_76                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[202]_52                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[203]_51                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[204]_50                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[20]_234                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[186]_68                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[198]_56                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[208]_46                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[211]_43                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[193]_61                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[19]_235                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[213]_41                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[206]_48                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[187]_67                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[207]_47                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[210]_44                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[215]_39                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[216]_38                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[217]_37                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[179]_75                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[190]_64                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[218]_36                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[219]_35                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[185]_69                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[240]_14                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[233]_21                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[229]_25                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[225]_29                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[239]_15                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[228]_26                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[223]_31                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[226]_28                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[244]_10                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[241]_13                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[248]_6                  |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[250]_4                  |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[251]_3                  |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[221]_33                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[222]_32                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[22]_232                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[235]_19                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[236]_18                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[231]_23                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[227]_27                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[232]_22                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[238]_16                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[23]_231                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[243]_11                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[246]_8                  |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[245]_9                  |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[247]_7                  |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[24]_230                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[234]_20                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[224]_30                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[220]_34                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[237]_17                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[242]_12                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[249]_5                  |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[252]_2                  |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[230]_24                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[34]_220                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[254]_0                  |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[28]_226                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[35]_219                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[40]_214                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[46]_208                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[29]_225                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[3]_251                  |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[44]_210                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[42]_212                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[48]_206                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[49]_205                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[50]_204                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[36]_218                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[53]_201                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[55]_199                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[57]_197                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[33]_221                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[253]_1                  |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[61]_193                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[5]_249                  |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[52]_202                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[56]_198                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[51]_203                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[41]_213                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[38]_216                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[54]_200                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[58]_196                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[37]_217                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[32]_222                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[60]_194                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[31]_223                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[2]_252                  |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[4]_250                  |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[59]_195                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[26]_228                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[30]_224                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[39]_215                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[255][7]_i_1_n_1         |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[45]_209                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[62]_192                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[63]_191                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[64]_190                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[47]_207                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[65]_189                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[66]_188                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[43]_211                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[27]_227                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[25]_229                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[9]_245                  |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[96]_158                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[67]_187                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[80]_174                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[99]_155                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[79]_175                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[82]_172                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[97]_157                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[76]_178                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[84]_170                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[71]_183                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[72]_182                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[94]_160                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[73]_181                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[90]_164                 |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[92]_162                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[68]_186                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[77]_177                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[78]_176                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[74]_180                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[69]_185                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[6]_248                  |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[75]_179                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[87]_167                 |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[88]_166                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[7]_247                  |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[86]_168                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[93]_161                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[95]_159                 |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[70]_184                 |                                   |                7 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[83]_171                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[89]_165                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[85]_169                 |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[91]_163                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[8]_246                  |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[81]_173                 |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/alu/md/Tmp1[7]_i_1_n_1                          |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/alu/md/Tmp1[14]_i_1_n_1                         |                                   |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/B_reg[0][0]                   | s_Rst_n1_BUFG                     |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/ACC_reg[0][0]                 | s_Rst_n1_BUFG                     |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/DPH0_reg[0][0]                | s_Rst_n1_BUFG                     |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/DPL0_reg[0][0]                | s_Rst_n1_BUFG                     |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IP_reg[0][0]                  | s_Rst_n1_BUFG                     |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/PCC                           | s_Rst_n1_BUFG                     |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/Inst1_reg[0][0]               | s_Rst_n1_BUFG                     |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/Inst2_reg[0]_1[0]             | s_Rst_n1_BUFG                     |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/IE_reg[7][0]                                    | s_Rst_n1_BUFG                     |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/SP_reg[0][0]                  | s_Rst_n1_BUFG                     |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/PCON_reg[7][0]                                  | s_Rst_n1_BUFG                     |                2 |             16 |
+|  Clk_in_IBUF_BUFG               | trans_ins/r_TX_Data0                                   | trans_ins/r_TX_Data[7]_i_1_n_1    |                2 |             16 |
+|  clk_reg_n_0_BUFG               | core51/TMOD_reg[7][0]                                  | s_Rst_n1_BUFG                     |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/TX_Data_reg[7][0]                               | s_Rst_n1_BUFG                     |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[98]_156                 |                                   |                8 |             16 |
+|  clk_reg_n_0_BUFG               | tp0/Port_Output                                        | s_Rst_n1_BUFG                     |                3 |             16 |
+|  clk_reg_n_0_BUFG               | tp1/Port_Output                                        | s_Rst_n1_BUFG                     |                5 |             16 |
+|  clk_reg_n_0_BUFG               | tp2/Port_Output                                        | s_Rst_n1_BUFG                     |                3 |             16 |
+|  clk_reg_n_0_BUFG               | tp3/Port_Output                                        | s_Rst_n1_BUFG                     |                3 |             16 |
+|  clk_reg_n_0_BUFG               | tc01/p_3_out[7]                                        | s_Rst_n1_BUFG                     |                8 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[127]_127                |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | tc2/p_1_out[7]                                         | s_Rst_n1_BUFG                     |                4 |             16 |
+|  clk_reg_n_0_BUFG               | tc2/p_1_out[15]                                        | s_Rst_n1_BUFG                     |                4 |             16 |
+|  clk_reg_n_0_BUFG               | tc2/p_2_out[15]                                        | s_Rst_n1_BUFG                     |                3 |             16 |
+|  clk_reg_n_0_BUFG               | tc2/p_2_out[7]                                         | s_Rst_n1_BUFG                     |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[107]_147                |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | uart/RX_ShiftReg[7]_i_1_n_1                            | s_Rst_n1_BUFG                     |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[111]_143                |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[114]_140                |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[102]_152                |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[118]_136                |                                   |                3 |             16 |
+|  clk_reg_n_0_BUFG               | uart/SBUF[7]_i_1_n_1                                   | s_Rst_n1_BUFG                     |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[11]_243                 |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[120]_134                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | tc01/Cnt1[7]_i_1_n_1                                   | s_Rst_n1_BUFG                     |                3 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[121]_133                |                                   |                2 |             16 |
+|  clk_BUFG                       | lcd/count_100ms[8]_i_1_n_1                             |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[128]_126                |                                   |                1 |             16 |
+|  clk_BUFG                       | lcd/lcd_data[7]_i_1_n_1                                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[115]_139                |                                   |                5 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[104]_150                |                                   |                4 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[130]_124                |                                   |                2 |             16 |
+|  clk_BUFG                       | lcd/pm_page_num[6]_i_1_n_1                             |                                   |                6 |             16 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMA[105]_149                |                                   |                1 |             16 |
+|  clk_reg_n_0_BUFG               | core51/sel_line2_reg[7][0]                             |                                   |                4 |             18 |
+|  clk_reg_n_0_BUFG               | core51/sel_line3_reg[7][0]                             |                                   |                4 |             18 |
+|  clk_reg_n_0_BUFG               | core51/alu/md/Div_Q[15]_i_1_n_1                        |                                   |                3 |             18 |
+|  clk_reg_n_0_BUFG               | core51/E[0]                                            |                                   |                2 |             18 |
+|  clk_reg_n_0_BUFG               | core51/sel_line1_reg[7][0]                             |                                   |                4 |             18 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMB_reg_64_127_0_2_i_1_n_1  |                                   |                3 |             24 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMB_reg_192_255_0_2_i_1_n_1 |                                   |                3 |             24 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMB_reg_0_63_0_2_i_4_n_1    |                                   |                3 |             24 |
+|  clk_BUFG                       | lcd/dm_index[7]_i_1_n_1                                |                                   |                5 |             24 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/IRAMB_reg_128_191_0_2_i_1_n_1 |                                   |                3 |             24 |
+|  clk_BUFG                       | lcd/pm_column[0]_i_1_n_1                               |                                   |               10 |             26 |
+|  Clk_in_IBUF_BUFG               | trans_ins/ser_out0                                     | trans_ins/r_Clk_Count[13]_i_1_n_1 |                5 |             28 |
+|  core_clk_reg_n_0_BUFG          |                                                        |                                   |                5 |             30 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/OPC_reg[0][0]                 | s_Rst_n1_BUFG                     |                9 |             32 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/PCC                           |                                   |               10 |             32 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/Inst_reg_rep[0][0]            | s_Rst_n1_BUFG                     |                7 |             32 |
+|  recv_ins/CLK                   | rom/opcode_reg_i_2_n_1                                 |                                   |                3 |             38 |
+|  clk_BUFG                       | lcd/count_100ms[8]_i_1_n_1                             | lcd/count_100ms[31]_i_1_n_1       |                7 |             48 |
+|  clk_reg_n_0_BUFG               | core51/Generic_MODEL.ram/Int_Acc_reg[0][0]             | s_Rst_n1_BUFG                     |               16 |             52 |
+|  Clk_in_IBUF_BUFG               |                                                        | slow_clk                          |                8 |             64 |
+|  clk_BUFG                       | lcd/column_num[31]_i_2_n_1                             | lcd/column_num[31]_i_1_n_1        |                9 |             64 |
+|  Clk_in_IBUF_BUFG               | recv_ins/indx[0]_i_1_n_1                               | recv_ins/res                      |                8 |             64 |
+|  Clk_in_IBUF_BUFG               |                                                        | core_clk                          |                8 |             64 |
+|  clk_BUFG                       | lcd/line_num[31]_i_2_n_1                               | lcd/line_num[31]_i_1_n_1          |                7 |             64 |
+|  clk_BUFG                       | lcd/page_num[31]_i_1_n_1                               |                                   |               11 |             64 |
+| ~trans_ins/r_TX_Done_reg_0_BUFG |                                                        | recv_ins/res                      |                8 |             64 |
+|  core_clk_reg_n_0_BUFG          | pulse_counter[31]_i_2_n_1                              | pulse_counter[31]_i_1_n_1         |                8 |             64 |
+|  n_0_2335_BUFG                  |                                                        | recv_ins/res                      |                8 |             64 |
+|  Clk_in_IBUF_BUFG               |                                                        | recv_ins/res                      |               19 |             92 |
+|  clk_reg_n_0_BUFG               |                                                        | s_Rst_n1_BUFG                     |               42 |            182 |
+|  clk_reg_n_0_BUFG               |                                                        |                                   |              369 |           2534 |
+|  clk_BUFG                       |                                                        |                                   |              388 |           2758 |
++---------------------------------+--------------------------------------------------------+-----------------------------------+------------------+----------------+
+
+

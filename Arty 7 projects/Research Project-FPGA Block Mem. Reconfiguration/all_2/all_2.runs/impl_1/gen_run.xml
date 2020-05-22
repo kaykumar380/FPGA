@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-2" LaunchTime="1543232286">
+  <File Type="BITSTR-BMM" Name="T8052_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="T8052_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="T8052_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="T8052_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="T8052.tcl"/>
+  <File Type="OPT-TIMING" Name="T8052_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="T8052_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="T8052_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="T8052_reports.tcl"/>
+  <File Type="OPT-DRC" Name="T8052_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="T8052.hwdef"/>
+  <File Type="PWROPT-DCP" Name="T8052_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="T8052_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="T8052_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="T8052_placed.dcp"/>
+  <File Type="PLACE-IO" Name="T8052_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="T8052_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="T8052_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="T8052_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="T8052_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="T8052_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="T8052_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="T8052.bgn"/>
+  <File Type="PLACE-TIMING" Name="T8052_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="T8052_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="T8052.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="T8052_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="T8052_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="T8052_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="T8052.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="T8052_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="T8052_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="T8052_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="T8052_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="T8052_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="T8052_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="T8052.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="T8052_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="T8052.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="T8052_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="T8052_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="T8052.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="T8052_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="T8052_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="T8052_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="T8052_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="T8052_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="T8052_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="T8052_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="T8052_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="T8052_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="T8052_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="T8052_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="T8052_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="T8052_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="T8052_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="T8052_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="T8052_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="T8052_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="T8052_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="T8052_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="T8052.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="T8052_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="T8052.rbt"/>
+  <File Type="BITSTR-NKY" Name="T8052.nky"/>
+  <File Type="BG-DRC" Name="T8052.drc"/>
+  <File Type="RDI-RDI" Name="T8052.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_Pack.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_Pack.vhd"/>
+        <Attr Name="ImportTime" Val="1511214112"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51.vhd"/>
+        <Attr Name="ImportTime" Val="1511213442"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_ALU.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_ALU.vhd"/>
+        <Attr Name="ImportTime" Val="1147530988"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_Glue.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_Glue.vhd"/>
+        <Attr Name="ImportTime" Val="1508832580"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_MD.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_MD.vhd"/>
+        <Attr Name="ImportTime" Val="1162122478"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_Port0.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_Port0.vhd"/>
+        <Attr Name="ImportTime" Val="1509628828"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_Port1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_Port1.vhd"/>
+        <Attr Name="ImportTime" Val="1509628850"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_Port2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_Port2.vhd"/>
+        <Attr Name="ImportTime" Val="1509628858"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_Port3.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_Port3.vhd"/>
+        <Attr Name="ImportTime" Val="1509628866"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_RAM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_RAM.vhd"/>
+        <Attr Name="ImportTime" Val="1511215266"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_TC01.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_TC01.vhd"/>
+        <Attr Name="ImportTime" Val="1508833110"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_TC2.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_TC2.vhd"/>
+        <Attr Name="ImportTime" Val="1147531018"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T51_UART.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T51_UART.vhd"/>
+        <Attr Name="ImportTime" Val="1508833002"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clk_mux.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/lcd_controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/lcd_controller.vhd"/>
+        <Attr Name="ImportTime" Val="1511214826"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mod_sel.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/mux_addrs.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/mux_addrs.vhd"/>
+        <Attr Name="ImportTime" Val="1542368769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/receiver_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/receiver_1.vhd"/>
+        <Attr Name="ImportTime" Val="1542369290"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/rom_n.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/rom_n.vhd"/>
+        <Attr Name="ImportTime" Val="1542369662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/transmitter_f.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/transmitter_f.vhd"/>
+        <Attr Name="ImportTime" Val="1542369448"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/T8052.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/T8052.vhd"/>
+        <Attr Name="ImportTime" Val="1542371628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source_code/SSRAM.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/sources_1/imports/Research Project/IP core/T51_Enhancement_Sathish_sulegai_2/Source_code/SSRAM.vhd"/>
+        <Attr Name="ImportTime" Val="1125418636"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="T8052"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Constraints_file/TE0711_orig_proj.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../all_1/all_1.srcs/constrs_1/imports/Constraints_file/TE0711_orig_proj.xdc"/>
+        <Attr Name="ImportTime" Val="1540472683"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
