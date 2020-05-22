@@ -7,3 +7,5 @@ while the core is held on reset. Then the core starts with new program.
 Benefit:
 For running a new program on the FPGA core, new sythesis is not required-> saves time,
 reduces sythesis tool dependency.
+
+All works were done in Xilinx Vivado 2018.3 version...
